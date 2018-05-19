@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 	$('#fullpage').fullpage({
         onLeave: function(index, nextIndex, direction){
             var leavingSection = $(this);
@@ -8,8 +8,8 @@ $(document).ready(function() {
             if(nextIndex === 1 && direction === 'up') {
                 $('#menu').css('left', '-10em')
             }
-            $('slide-indicator-'+index+'>i').removeClass('fas').addClass('far')
-            $('slide-indicator-'+nextIndex+'>i').removeClass('far').addClass('fas')
+            $('.slide-indicator-'+index+'>i').removeClass('fas').addClass('far')
+            $('.slide-indicator-'+nextIndex+'>i').removeClass('far').addClass('fas')
         }
     });
 });

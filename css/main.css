@@ -1,6 +1,7 @@
 .main {
     background-image: linear-gradient(90deg, #a18ecf, #fac3ea);
 }
+
 .fullscreen {
     /* full screen*/
     height: 100%;
@@ -23,13 +24,6 @@
     align-items: center;
     position: relative;
 }
-.fullscreen  > .nine {
-    flex: none;
-    align-self: unset;
-    
-    position: absolute;
-    bottom: 3em;
-}
 
 #menu {
     position: fixed;
@@ -42,6 +36,7 @@
     transition: left 2s ease;
     line-height: 200%;
 }
+
 .section:not(.main) {
     margin-left: 6em;
 }
