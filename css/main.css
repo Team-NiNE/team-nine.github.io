@@ -1,5 +1,5 @@
 .main {
-    background-image: linear-gradient(90deg, #a18ecf, #fac3ea);
+    background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
 }
 
 .fullscreen {
@@ -8,9 +8,9 @@
     width: 100%;
 
     /* gradient mask */
-    background-image: linear-gradient(90deg, #8171a7, #c599b9);
-    background-image: -webkit-linear-gradient(90deg, #8171a7, #c599b9);
-    background-image: -moz-linear-gradient(90deg, #8171a7, #c599b9);
+    background-color: black;
+    background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
+    background-blend-mode: hard-light;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
