@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.fullscreen > div:not(.txt-nine) {
+.fullscreen > div {
     width: 100%;
     line-height: 100%;
     font-size: 10em;
@@ -30,15 +30,16 @@
 #menu {
     position: fixed;
     height: 8em;
-    width: 5em;
-    margin-top: -5em;
+    width: 10em;
+    margin-top: -4em;
     bottom: -50vh;
-    left: 0.1em;
+    left: 1em;
     /* background-color: aqua; */
     transition: bottom 700ms ease 0s;
     line-height: 200%;
 }
+#menu > span > i { margin-right: 2em; }
 
 .section:not(.main) {
-    margin-left: 6em;
+    margin-left: 10em;
 }
