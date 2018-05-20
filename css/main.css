@@ -1,5 +1,5 @@
 .main {
-    background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
+    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
     position: fixed;
     transition: top 700ms ease 0s;
     z-index: -1;
@@ -11,10 +11,6 @@
     width: 100vw;
 
     /* gradient mask */
-    /* background-image: linear-gradient(90deg, #6a4ea7, #f791d7);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
     color: black;
     mix-blend-mode: overlay;
 
@@ -35,6 +31,13 @@
     line-height: 100%;
     font-size: 10em;
     margin-left: 1em;
+}
+
+.main > i {
+    color: white;
+    position: absolute;
+    left: 2em;
+    bottom: 1em;
 }
 
 #menu {
