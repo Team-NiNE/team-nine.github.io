@@ -37,7 +37,7 @@
     position: fixed;
     height: 8em;
     width: 10em;
-    bottom: 50vh;
+    bottom: -50vh;
     left: 1em;
     margin-bottom: -4em;
     /* background-color: aqua; */
