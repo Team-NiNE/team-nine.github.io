@@ -2,6 +2,10 @@
     background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
 }
 
+#fullpage {
+    z-index: -1;
+}
+
 .fullscreen {
     /* full screen*/
     height: 100vh;
@@ -15,11 +19,13 @@
     background-clip: text;
     color: transparent;
 
+    /* make it center */
+    display: flex;
+    align-items: center;
+
     /* positioning */
     position: fixed;
-    top: 50vh;
-    left: 0;
-    margin-top: -10em; /* font size */
+    transition: height 700ms ease 0s;
 }
 
 .fullscreen > div {
