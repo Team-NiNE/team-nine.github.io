@@ -12,9 +12,7 @@
     width: 100vw;
 
     /* gradient mask */
-    background-color: black;
-    background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
-    background-blend-mode: hard-light;
+    background-image: linear-gradient(90deg, #6a4ea7, #f791d7);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
