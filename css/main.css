@@ -168,3 +168,6 @@ button.btn-learn-more:hover > i {
     color: white;
     text-shadow: 0px 0px .2em black;
 }
+.project > .details > .icons > * {
+    margin-right: .2em;
+}
