@@ -1,8 +1,7 @@
 .main {
     background-image: linear-gradient(90deg, #a18cd1, #fbc2eb);
-}
-
-#fullpage {
+    position: fixed;
+    transition: top 700ms ease 0s;
     z-index: -1;
 }
 
@@ -20,10 +19,6 @@
     /* make it center */
     display: flex;
     align-items: center;
-
-    /* positioning */
-    position: fixed;
-    transition: height 700ms ease 0s;
 }
 
 .fullscreen > div {
@@ -46,6 +41,11 @@
 }
 #menu > span > i { margin-right: 2em; }
 
-.section:not(.main) {
-    margin-left: 10em;
+.section:not(.fake) {
+    padding-left: 10em;
+    background: white;
+    background-clip: padding-box;
+}
+.section.fake {
+    background: transparent;
 }
