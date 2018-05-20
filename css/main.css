@@ -5,6 +5,19 @@
     z-index: -1;
 }
 
+.scroll-assitant-border {
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+}
+
+.main > i.fa-circle {
+    color: white;
+    position: absolute;
+    left: 2.2em;
+    bottom: 2.4em;
+}
+
 .fullscreen {
     /* full screen*/
     height: 100vh;
@@ -31,13 +44,6 @@
     line-height: 100%;
     font-size: 10em;
     margin-left: 1em;
-}
-
-.main > i {
-    color: white;
-    position: absolute;
-    left: 2em;
-    bottom: 1em;
 }
 
 #menu {
