@@ -11,10 +11,12 @@
     width: 100vw;
 
     /* gradient mask */
-    background-image: linear-gradient(90deg, #6a4ea7, #f791d7);
+    /* background-image: linear-gradient(90deg, #6a4ea7, #f791d7);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+    color: black;
+    mix-blend-mode: overlay;
 
     /* make it center */
     display: flex;
