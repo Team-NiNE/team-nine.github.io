@@ -20,6 +20,13 @@
     display: flex;
     align-items: center;
 }
+.img-nine {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 55vh;
+    mix-blend-mode: overlay;
+}
 
 .fullscreen > div {
     width: 100%;
