@@ -18,6 +18,7 @@ projects = [
         name: 'Team.NiNE Website',
         description: 'The website.',
         technology: ['html5', 'js', 'css3-alt'], // Font Awesome의 아이콘 코드
-        github: 'https://github.com/Team-NiNE/team-nine.github.io' // optional
+        github: 'https://github.com/Team-NiNE/team-nine.github.io', // optional
+        banner: '' // image url
     }
 ]
