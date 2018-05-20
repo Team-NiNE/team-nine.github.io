@@ -2,7 +2,7 @@
     background-image: linear-gradient(45deg, #84d0e8, #52bea2);
     position: fixed;
     transition: top 700ms ease 0s;
-    z-index: -2;
+    z-index: -3;
 }
 
 .scroll-assitant-border {
@@ -60,6 +60,8 @@
 #menu > span > i { margin-right: 2em; }
 
 .section:not(.fake) {
+    position: relative;
+    z-index: -2;
     padding-left: 10em;
     background: white;
     background-clip: padding-box;
@@ -69,20 +71,32 @@
 }
 
 button.btn-learn-more {
+    position: relative;
     border-radius: 2rem;
     transition: all 700ms ease 350ms;
     background-color: white;
     position: relative;
-    z-index: 1;
     text-align: center;
     width: 2.3em;
-    box-shadow: 0px 0px 10px 0px #000000;
+    border-width: 0;
 }
 button.btn-learn-more:hover {
-    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
     background-color: white;
     width: 7em;
     transition-delay: 0ms;
+}
+button.btn-learn-more::after {
+    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    content: '';
+    border-radius: 2.1rem;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
+    box-shadow: 0px 0px 10px 0px #000000;
 }
 button.btn-learn-more > span {
     opacity: 0;
