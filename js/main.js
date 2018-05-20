@@ -13,10 +13,10 @@ $(function() {
         }
     });
     projects.forEach(function(i) {
-        $('.section.projects > .fp-tableCell').append('<div class="project container"><div class="details"><div class="icons">'
-            + i.technology.map(function (s) { return '<i class="fab fa-3x fa-'+s+'"></i>' }).join('') +
+        $('.section.projects > .fp-tableCell').append('<div class="project"><div class="details"><div class="icons">'
+            + i.technology.map(function (s) { return '<i class="fab fa-4x fa-'+s+'"></i>' }).join('') +
            '</div><div class="texts"><span class="title">' + i.name + 
            '</span> <span>' + i.description + '</span></div></div>' +
-            (i.github ? '<a class="link" href="' + i.github + '"><i class="fab fa-3x fa-github"></i></a></div>' : '</div>'))
+            (i.github ? '<a class="link" href="' + i.github + '"><i class="fab fa-4x fa-github"></i></a></div>' : '</div>'))
     })
 });
