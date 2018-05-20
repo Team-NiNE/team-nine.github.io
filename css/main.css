@@ -4,20 +4,17 @@
     transition: top 700ms ease 0s;
     z-index: -3;
 }
-
 .scroll-assitant-border {
     position: absolute;
     left: 2em;
     bottom: 2em;
 }
-
 .main > i.fa-circle {
     color: white;
     position: absolute;
     left: 2.2em;
     bottom: 2.4em;
 }
-
 .fullscreen {
     /* full screen*/
     height: 100vh;
@@ -38,7 +35,6 @@
     max-width: 55vh;
     mix-blend-mode: overlay;
 }
-
 .fullscreen > div {
     width: 100%;
     line-height: 100%;
@@ -97,7 +93,6 @@ button.btn-learn-more::after {
     border-radius: 2.1rem;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
     box-shadow: 0px 0px 0.8em 0px #000000;
 }
 button.btn-learn-more > span {
