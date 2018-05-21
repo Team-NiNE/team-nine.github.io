@@ -2,7 +2,7 @@
     background-image: linear-gradient(45deg, #84d0e8, #52bea2);
     position: fixed;
     transition: top 700ms ease 0s;
-    z-index: -3;
+    z-index: -5;
 }
 .scroll-assitant-border {
     position: absolute;
@@ -57,7 +57,7 @@
 
 .section:not(.fake) {
     position: relative;
-    z-index: -2;
+    z-index: -4;
     padding-left: 10em;
     background: white;
     background-clip: padding-box;
@@ -114,4 +114,133 @@ button.btn-learn-more > i {
 button.btn-learn-more:hover > i {
     opacity: 0;
     width: 0;
+}
+
+.project {
+    display: flex;
+    height: 5em;
+    margin: 1em 3em;
+}
+.project > a.link {
+    display: block;
+    width: 5em;
+    background: white;
+    box-shadow: 0px 0px .3em 0px gray;
+    color: black;
+    padding: .5em 0;
+    text-align: center;
+    border-radius: 1em;
+    transition: all 500ms ease 0ms;
+    margin-left: 1em;
+}
+.project > .details {
+    flex: 1;
+    box-shadow: 0px 0px .3em 0px gray;
+    border-radius: 1em;
+    transition: all 500ms ease 0ms;
+    position: relative;
+}
+.project > .details::before {
+    position: absolute;
+    background-image: linear-gradient(270deg, #84d0e8, #52bea2);
+    top: 0; left: 0;
+    border-radius: 1em;
+    width: 100%; height: 5em;
+    transition: all 500ms ease 0ms;
+    z-index: 1;
+    opacity: 0;
+    content: '';
+}
+.project > .details > .icons {
+    float: left;
+    padding: .5em 0;
+    margin-left: 1em;
+    transition: all 500ms ease 0ms;
+    z-index: 2;
+    position: relative;
+}
+.project > .details > .texts {
+    float: right;
+    margin-right: 1em;
+    text-align: right;
+    z-index: 2;
+    position: relative;
+}
+.project > .details > .texts > span.title {
+    font-size: 1.8em;
+    display: block;
+    line-height: 110%;
+    margin-top: .4em;
+}
+.project> a.link:hover {
+    background-color: black;
+    color: white;
+}
+.project > .details:hover::before {
+    opacity: 1;
+}
+.project > .details:hover > .icons {
+    color: white;
+    text-shadow: 0px 0px .2em black;
+}
+.project > .details > .icons > * {
+    margin-right: .2em;
+}
+
+#project-modal {
+    position: fixed;
+    display: none; /* will be flex later */
+    z-index: 1;
+    width: calc(100vw - 16em); /* menu 10em, widget margin 3em 10+3+3 = 16em */
+    height: 29em; /* widget height 5em, widget margin 1em (5*5)+(1*4) = 29em */
+    background-image: url(https://picsum.photos/1100/600);
+    border-radius: 1em;
+    left: 13em; /* menu 10em, widget margin 3em 10+3 = 3em */
+    top: calc(50vh - 14.5em); /* see height */
+    box-shadow: 0px 0px .3em 0px gray;
+    transition: all 500ms ease 0ms;
+}
+#project-modal > span.name {
+    position: absolute;
+    top: 1.2em; left: 1em;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+#project-modal > .icons {
+    position: absolute;
+    top: .8em; right: 1em;
+}
+#project-modal > .icons > i {
+    display: block;
+    background: white;
+    text-align: center;
+    margin: .3em;
+    padding: .1em;
+    border-radius: .2em;
+    transition: background-color 500ms ease 0ms, color 500ms ease 0ms;
+}
+#project-modal > .icons > i.fas {
+    color: red;
+}
+#project-modal > .icons > i.fas:hover {
+    background-color: red;
+    color: white;
+}
+#project-modal > .icons > i.fab {
+    background-color: black;
+    color: white;
+}
+#project-modal > .icons > i.fab:hover {
+    background-color: white;
+    color: black;
+}
+#project-modal > .details {
+    position: absolute;
+    bottom: 0; left: 0;
+    margin: 1em;
+    padding: .5em;
+    height: calc(100% - 8.5em);
+    border-radius: .2em;
+    background-color: white;
 }
