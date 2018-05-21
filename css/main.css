@@ -98,12 +98,12 @@ button.btn-learn-more::after {
 button.btn-learn-more > span {
     opacity: 0;
     transition: all 700ms ease 0ms;
-    width: 0ch;
     color: black;
+    margin: auto;
+    margin-left: .1em;
 }
 button.btn-learn-more:hover > span {
     opacity: 1;
-    width: 80ch;
     transition-delay: 350ms;
 }
 button.btn-learn-more > i {
