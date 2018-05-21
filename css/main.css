@@ -58,7 +58,7 @@
 .section:not(.fake) {
     position: relative;
     z-index: -4;
-    /* #menu left : 1em + width : 10em = 11em */
+    /* #menu left + width = 1em + 10em = 11em */
     padding-left: 11em;
     background: white;
     background-clip: padding-box;
