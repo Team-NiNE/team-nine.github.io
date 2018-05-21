@@ -170,12 +170,14 @@ button.btn-learn-more:hover > i {
     margin-top: 25%;
     font-weight: 700;
     line-height: 100%;
+    padding-left: 1em; padding-right: 1em;
 }
 .member-position {
     margin-bottom: 0.5em;
     font-size: 1.25em;
     font-weight: 500;
     line-height: 120%;
+    padding-left: 1em; padding-right: 1em;
 }
 .member-about {
     display: block;
@@ -183,6 +185,7 @@ button.btn-learn-more:hover > i {
     color: #333333;
     line-height: 100%;
     margin-bottom: 0.125em;
+    padding-left: 1em; padding-right: 1em;
     height: 4em;
     overflow-y: hidden;
 }
