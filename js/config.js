@@ -9,9 +9,15 @@ members = [
             banner: '' // optional
         },
         social: { // optional
-            twitter: 'https://twitter.com/Basix1120', // Font Awesome의 아이콘 코드와 Full URL
+            mastodon: 'https://twingyeo.kr/@Basix', // Font Awesome의 아이콘 코드와 Full URL
             telegram: 'https://t.me/rtyu1120',
-            _at: 'mailto:basix@basix.tech'
+            _at: 'mailto:basix@basix.tech',
+            bitcoin: 'bitcoin:12mHKXcVhwMsXWoGJ1hzvaqmJU1tSjBtxw',
+            github: 'https://github.com/BasixKOR',
+            keybase: 'https://keybase.io/rtyu1120',
+            paypal: 'https://paypal.me/rtyu1120',
+            reddit: 'https://reddit.com/u/rtyu1120',
+            steam: 'http://steamcommunity.com/id/basixkor'
         }
     },
     {
