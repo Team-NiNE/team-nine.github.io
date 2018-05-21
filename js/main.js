@@ -22,7 +22,7 @@ $.fn.extend({
 
         return this;
     },
-}); // Copied from: https://github.com/daneden/animate.css
+}); // Copied from: https://github.com/daneden/animate.css=
 $(function() {
 	$('#fullpage').fullpage({
         onLeave: function(index, nextIndex, direction){
@@ -35,6 +35,12 @@ $(function() {
             }
             $('.slide-indicator-'+index+'>i').removeClass('fas').addClass('far')
             $('.slide-indicator-'+nextIndex+'>i').removeClass('far').addClass('fas')
+            if(index === 4) {
+                var animationDirection = direction === 'down' ? 'Up' : 'Down'
+                $('#project-modal').animateCss('fadeOut'+animationDirection, function(e) {
+                    $('#project-modal').css('display', 'none')
+                })
+            }
         }
     });
     projects.forEach(function(i) {
