@@ -41,10 +41,15 @@ $(function() {
         $('.section.projects > .fp-tableCell').append('<div class="project"><div class="details"><div class="icons">'
             + i.technology.map(function (s) { return '<i class="fab fa-4x fa-'+s+'"></i>' }).join('') +
            '</div><div class="texts"><span class="title">' + i.name + 
-           '</span> <span>' + i.description + '</span></div></div>' +
+           '</span> <span banner="' + i.banner + '">' + i.description.slice(0, 100) + '</span></div></div>' +
             (i.github ? '<a class="link" href="' + i.github + '"><i class="fab fa-4x fa-github"></i></a></div>' : '</div>'))
     })
     $('.project > .details').on('click', function(e) {
+        $('#project-modal > .name').text($(this).find('.texts > .title').text())
+        $('#project-modal > .icons > a').attr('href', $(this).parent().find('a.link').attr('href'))
+        $('#project-modal > .details').text($(this).find('.texts > span:not(.title)').text())
+        if($(this).find('.texts > span:not(.title)').attr('banner'))
+            $('#project-modal').css('background-image', $(this).find('.texts > span:not(.title)').attr('banner'))
         $('#project-modal').animateCss('fadeIn')
         $('#project-modal').css('display', 'flex')
     })

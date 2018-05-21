@@ -213,11 +213,11 @@ button.btn-learn-more:hover > i {
     position: absolute;
     top: .8em; right: 1em;
 }
-#project-modal > .icons > i {
+#project-modal > .icons > i,a {
     display: block;
     background: white;
     text-align: center;
-    margin: .3em;
+    margin: .2em;
     padding: .1em;
     border-radius: .2em;
     transition: background-color 500ms ease 0ms, color 500ms ease 0ms;
@@ -229,11 +229,12 @@ button.btn-learn-more:hover > i {
     background-color: red;
     color: white;
 }
-#project-modal > .icons > i.fab {
+#project-modal > .icons > a.fab {
     background-color: black;
     color: white;
+    text-decoration: none;
 }
-#project-modal > .icons > i.fab:hover {
+#project-modal > .icons > a.fab:hover {
     background-color: white;
     color: black;
 }
@@ -243,6 +244,7 @@ button.btn-learn-more:hover > i {
     margin: 1em;
     padding: .5em;
     height: calc(100% - 8.5em);
+    width: calc(100% - 2em);
     border-radius: .2em;
     background-color: white;
 }
