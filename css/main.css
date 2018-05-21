@@ -170,14 +170,14 @@ button.btn-learn-more:hover > i {
     margin-top: 25%;
     font-weight: 700;
     line-height: 100%;
-    padding-left: 1em; padding-right: 1em;
+    padding-left: 1.25em; padding-right: 1.25em;
 }
 .member-position {
     margin-bottom: 0.5em;
     font-size: 1.25em;
     font-weight: 500;
     line-height: 120%;
-    padding-left: 1em; padding-right: 1em;
+    padding-left: 1.25em; padding-right: 1.25em;
 }
 .member-about {
     display: block;
@@ -185,7 +185,7 @@ button.btn-learn-more:hover > i {
     color: #333333;
     line-height: 100%;
     margin-bottom: 0.125em;
-    padding-left: 1em; padding-right: 1em;
+    padding-left: 1.25em; padding-right: 1.25em;
     height: 4em;
     overflow-y: hidden;
 }
@@ -196,4 +196,10 @@ button.btn-learn-more:hover > i {
 }
 .member-link > a:not(:last-child) {
     margin-right: .3em;
+}
+.member-link > a {
+    color: black;
+}
+.member-link > a:hover {
+    color: #c4c4c4;
 }
