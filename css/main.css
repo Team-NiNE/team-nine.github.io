@@ -130,6 +130,7 @@ button.btn-learn-more:hover > i {
     display: inline-block;
     text-align: center;
     border: 0.2em solid #52bea2; /*입력 안했을경우 기본 컬러*/
+    margin: 2em;
 }
 .member-card > .member-card-shadow {
     content: '';
@@ -187,4 +188,7 @@ button.btn-learn-more:hover > i {
     bottom: 0.5em;
     width: 100%;
     color: black;
+}
+.member-link > a:not(:last-child) {
+    margin-right: .3em;
 }
