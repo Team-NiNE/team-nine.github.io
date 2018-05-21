@@ -43,7 +43,7 @@ $(function() {
             }
         }
     });
-    projects.forEach(function(i) {
+    projects.slice(0, 5).forEach(function(i) {
         $('.section.projects > .fp-tableCell').append('<div class="project"><div class="details"><div class="icons">'
             + i.technology.map(function (s) { return '<i class="fab fa-4x fa-'+s+'"></i>' }).join('') +
            '</div><div class="texts"><span class="title">' + i.name + 
