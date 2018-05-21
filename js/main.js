@@ -20,7 +20,12 @@ $(function() {
         var a = '<div class="carousel-item">' + m.map(function(i) {
             var socials = Object.keys(i.social).map(function(item) {
                 // <a href="$social.value"><i class="fab $social.key"></i></a>
-                return '<a href="' + i.social[item] + '"><i class="fab fa-'+item+'"></i></a>'
+                var faType = 'fab'
+                if(item.slice(0, 1) === '_') {
+                    faType = 'fas'
+                    item = item.slice(1)
+                }
+                return '<a href="' + i.social[item] + '"><i class="'+ faType + ' fa-'+item+'"></i></a>'
             }).join('')
             console.log(socials)
             var html = ('<div class="member-card" style="border: 3px solid ' + i.color + ';"> <img src="' + i.images.banner
