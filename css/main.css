@@ -342,7 +342,7 @@ button.btn-learn-more:hover > i {
     width: 100%;
 }
 .member-link > a:not(:last-child) {
-    margin-right: .3em;
+    margin-right: 1em;
 }
 .member-link > a {
     color: black;
