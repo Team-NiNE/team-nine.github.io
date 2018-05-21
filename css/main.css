@@ -130,7 +130,7 @@ button.btn-learn-more:hover > i {
     height: 338px;
     padding: 2px;
     background-image: linear-gradient(45deg, #84d0e8, #52bea2);
-
+    display: inline;
 }
 
 .member-card {
