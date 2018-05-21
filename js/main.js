@@ -43,13 +43,14 @@ $(function() {
             }
         }
     });
-    projects.slice(0, 5).forEach(function(i) {
-        $('.section.projects > .fp-tableCell').append('<div class="project"><div class="details"><div class="icons">'
+    var projectsHtml = projects.slice(0, 5).map(function(i) {
+        return ('<div class="project"><div class="details"><div class="icons">'
             + i.technology.map(function (s) { return '<i class="fab fa-4x fa-'+s+'"></i>' }).join('') +
            '</div><div class="texts"><span class="title">' + i.name + 
            '</span> <span banner="' + i.banner + '">' + i.description.slice(0, 100) + '</span></div></div>' +
             (i.github ? '<a class="link" href="' + i.github + '"><i class="fab fa-4x fa-github"></i></a></div>' : '</div>'))
-    })
+    }).join('')
+    $('.section.projects > .fp-tableCell').prepend(projectsHtml)
     $('.project > .details').on('click', function(e) {
         $('#project-modal > .name').text($(this).find('.texts > .title').text())
         $('#project-modal > .icons > a').attr('href', $(this).parent().find('a.link').attr('href'))

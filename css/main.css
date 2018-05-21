@@ -66,6 +66,9 @@
 .section.fake {
     background: transparent;
 }
+.section.projects > .fp-tableCell {
+    padding-top: 5em;
+}
 
 button.btn-learn-more {
     position: relative;
@@ -206,11 +209,11 @@ button.btn-learn-more:hover > i {
     position: fixed;
     display: none; /* will be flex later */
     z-index: 1;
-    width: calc(100vw - 16em); /* menu 10em, widget margin 3em 10+3+3 = 16em */
-    height: 29em; /* widget height 5em, widget margin 1em (5*5)+(1*4) = 29em */
+    width: calc(100vw - 17em); /* menu 10em, widget margin 3em 11+3+3 = 16em */
+    height: 30em; /* widget height 5em, widget margin 1em (5*5)+(1*5) = 29em */
     background-image: url(https://picsum.photos/1100/600);
     border-radius: 1em;
-    left: 13em; /* menu 10em, widget margin 3em 10+3 = 3em */
+    left: 14em; /* menu 11em, widget margin 3em 11+3 = 3em */
     top: calc(50vh - 14.5em); /* see height */
     box-shadow: 0px 0px .3em 0px gray;
     transition: all 500ms ease 0ms;
@@ -261,4 +264,9 @@ button.btn-learn-more:hover > i {
     width: calc(100% - 2em);
     border-radius: .2em;
     background-color: white;
+}
+
+.section.projects .btn {
+    margin-top: 3em;
+    margin-left: auto; margin-right: auto;
 }
