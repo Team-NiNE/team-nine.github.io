@@ -158,14 +158,14 @@ button.btn-learn-more:hover > i {
     line-height: 110%;
     margin-top: .4em;
 }
-.project:hover > a.link {
+.project> a.link:hover {
     background-color: black;
     color: white;
 }
-.project:hover > .details {
+.project > .details:hover {
     background-image: linear-gradient(270deg, #84d0e8, #52bea2);
 }
-.project:hover > .details > .icons {
+.project > .details:hover > .icons {
     color: white;
     text-shadow: 0px 0px .2em black;
 }
