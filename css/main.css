@@ -113,10 +113,11 @@ button.btn-learn-more:hover > span {
 }
 button.btn-learn-more > i {
     opacity: 1;
-    transition: all 700ms ease 0s;
-    margin: auto;
+    transition: all 700ms ease 350ms;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 button.btn-learn-more:hover > i {
     opacity: 0;
-    width: 0;
 }
