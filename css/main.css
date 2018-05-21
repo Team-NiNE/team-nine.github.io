@@ -103,7 +103,7 @@ button.btn-learn-more::after {
     border-radius: 2.1rem;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    box-shadow: 0px 0px 0.8em 0px #000000;
+    box-shadow: 0px 0px 0.8em 0px gray;
 }
 button.btn-learn-more > span {
     opacity: 0;
@@ -193,7 +193,7 @@ button.btn-learn-more:hover > i {
 }
 .project > .details:hover > .icons {
     color: white;
-    text-shadow: 0px 0px .2em black;
+    text-shadow: 0px 0px .2em gray;
 }
 .project > .details > .icons > * {
     margin-right: .2em;
