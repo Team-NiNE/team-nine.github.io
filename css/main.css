@@ -123,44 +123,49 @@ button.btn-learn-more:hover > i {
 
 /*---member---*/
 .member-card {
-    position: absolute; 
-    top: 50%; 
-    margin-top: -12em;
-    width: 16em;
-    height: 24em;
-    background: #ffffff;
-    display: inline;
+    position: relative;
+    width: 20em;
+    height: 30em;
+    background: white;
+    display: inline-block;
     text-align: center;
     border: 0.2em solid #52bea2; /*입력 안했을경우 기본 컬러*/
 }
-
+.member-card > .member-card-shadow {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    transition: all 700ms ease 0s;
+    width: 100%; height: 100%;
+    background-color: #52bea2;
+    z-index: -1;
+}
+.member-card:hover > .member-card-shadow {
+    top: 1em; left: 1em;
+}
 .member-banner {
     width: 100%;
-    height: 9.5em;
+    height: 40%;
     margin-top: 0em;
-    background: linear-gradient(90deg, #a18ecf, #fac3ea);  /*배너 없을경우 그라데이션 배경*/
+    background-image: linear-gradient(90deg, #a18ecf, #fac3ea);  /*배너 없을경우 그라데이션 배경*/
     object-fit: cover;
 }
-
 .member-avatar {
     position: absolute;
-    left: 4.8em;
-    top: 6.3em;
-    width: 6em;
-    height: 6em;
+    left: 50%;
+    top: 40%;
+    margin-top: -4em;
+    margin-left: -4em;
+    width: 8em;
+    height: 8em;
     border: 0.2em #FFFFFF solid;
     border-radius: 50%;
     background: #FFFFFF;
 }
-.member-link {
-    position: absolute; 
-    bottom: 0.5em;
-    width: 100%;
-}
 .member-name {
-    margin-bottom: 0em;
-    margin-top: 1.8em;
+    margin-top: 25%;
     font-weight: 700;
+    line-height: 100%;
 }
 .member-position {
     margin-bottom: 0.5em;
@@ -169,8 +174,17 @@ button.btn-learn-more:hover > i {
     line-height: 120%;
 }
 .member-about {
+    display: block;
     font-size: 1em;
     color: #333333;
     line-height: 120%;
     margin-bottom: 0.125em;
+    height: 6em;
+    overflow-y: hidden;
+}
+.member-link {
+    position: absolute; 
+    bottom: 0.5em;
+    width: 100%;
+    color: black;
 }
