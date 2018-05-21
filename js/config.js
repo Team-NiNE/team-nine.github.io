@@ -9,7 +9,9 @@ members = [
             banner: '' // optional
         },
         social: { // optional
-            twitter: 'https://twitter.com/Basix1120' // Font Awesome의 아이콘 코드와 Full URL
+            twitter: 'https://twitter.com/Basix1120', // Font Awesome의 아이콘 코드와 Full URL
+            telegram: 'https://t.me/rtyu1120',
+            _at: 'mailto:basix@basix.tech'
         }
     },
     {
@@ -36,6 +38,20 @@ members = [
         },
         social: { // optional
             twitter: 'https://twitter.com/_Hoto_Cocoa_' // Font Awesome의 아이콘 코드와 Full URL
+        }
+    },
+    {
+        nickname: 'ASTERISQ',
+        position: 'Designer',
+        about: '',
+        color: '#304FFE',
+        images: {
+            profile: 'https://i2.wp.com/blog.asterisk.moe/wp-content/uploads/2018/05/cropped-ASTERISQ-1.png',
+            banner: ''
+        },
+        social: {
+            twitter: 'https://twitter.com/ASTERISQ_twit',
+            wordpress: 'https://blog.asterisk.moe/'
         }
     }
 ]

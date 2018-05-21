@@ -68,6 +68,7 @@
 }
 .section.projects > .fp-tableCell {
     padding-top: 5em;
+    text-align: center;
 }
 
 button.btn-learn-more {
@@ -269,4 +270,114 @@ button.btn-learn-more:hover > i {
 .section.projects .btn {
     margin-top: 3em;
     margin-left: auto; margin-right: auto;
+}
+/*---member---*/
+.member-card {
+    position: relative;
+    width: 20em;
+    height: 30em;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    border: 0.2em solid #52bea2; /*입력 안했을경우 기본 컬러*/
+    margin: 2em;
+}
+.member-card > .member-card-shadow {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    transition: all 500ms ease 0s;
+    width: 100%; height: 100%;
+    background-color: #52bea2;
+    z-index: -1;
+}
+.member-card:hover > .member-card-shadow {
+    top: 1em; left: 1em;
+}
+.member-banner {
+    width: 100%;
+    height: 40%;
+    margin-top: 0em;
+    background-image: linear-gradient(90deg, #a18ecf, #fac3ea);  /*배너 없을경우 그라데이션 배경*/
+    object-fit: cover;
+}
+.member-avatar {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-top: -4em;
+    margin-left: -4em;
+    width: 8em;
+    height: 8em;
+    border: 0.2em #FFFFFF solid;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #84d0e8, #52bea2); /* 프사가 안 보일 경우 이쁘게라도 */
+}
+.member-name {
+    margin-top: 25%;
+    font-weight: 700;
+    line-height: 100%;
+    padding-left: 1.25em; padding-right: 1.25em;
+}
+.member-position {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 120%;
+    padding-left: 1.25em; padding-right: 1.25em;
+}
+.member-about {
+    display: block;
+    font-size: 1em;
+    color: #333333;
+    line-height: 100%;
+    margin-bottom: 0.125em;
+    padding-left: 1.25em; padding-right: 1.25em;
+    height: 4em;
+    overflow-y: hidden;
+}
+.member-link {
+    position: absolute; 
+    bottom: 1em;
+    width: 100%;
+}
+.member-link > a:not(:last-child) {
+    margin-right: .3em;
+}
+.member-link > a {
+    color: black;
+}
+.member-link > a:hover {
+    color: #c4c4c4;
+}
+.carousel-inner {
+    text-align: center;
+}
+
+button.btn-circle {
+    position: relative;
+    width: 2.25em; height: 2.25em;
+    transition: all 500ms ease 0ms;
+    background-color: white;
+    border: unset;
+    border-radius: 50%;
+    box-shadow: unset;
+}
+button.btn-circle:hover {
+    background-color: transparent;
+}
+button.btn-circle:focus {
+    box-shadow: unset;
+}
+button.btn-circle::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    content: '';
+    border-radius: 50%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
+    box-shadow: 0px 0px 0.8em 0px #000000;
 }
