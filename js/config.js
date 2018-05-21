@@ -5,13 +5,12 @@ members = [
         about: 'I am Basix.',
         color: '#46bfec', // CSS color
         images: { //image url
-            profile: '', 
+            profile: 'https://www.gravatar.com/avatar/bdc333bbab37277c58cba9d9e0f032c6?s=512', 
             banner: '' // optional
         },
         social: { // optional
             twitter: 'https://twitter.com/Basix1120' // Font Awesome의 아이콘 코드와 Full URL
         }
-
     },
     {
         nickname: 'Kiwi',
@@ -25,7 +24,19 @@ members = [
         social: { // optional
             twitter: 'https://twitter.com/kdo9921' // Font Awesome의 아이콘 코드와 Full URL
         }
-
+    },
+    {
+        nickname: 'Cocoa',
+        position: 'Developer',
+        about: '집에 가고 싶습니다',
+        color: '#FFC0CB', // CSS color
+        images: { //image url
+            profile: 'https://hoto.us/image512.jpg', 
+            banner: '' // optional
+        },
+        social: { // optional
+            twitter: 'https://twitter.com/_Hoto_Cocoa_' // Font Awesome의 아이콘 코드와 Full URL
+        }
     }
 ]
 projects = [
