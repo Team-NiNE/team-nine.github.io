@@ -23,6 +23,17 @@ $.fn.extend({
         return this;
     },
 }); // Copied from: https://github.com/daneden/animate.css=
+function shuffle(array) {
+    let counter = array.length
+    while (counter > 0) {
+        let index = Math.floor(Math.random() * counter)
+        counter--
+        let temp = array[counter]
+        array[counter] = array[index]
+        array[index] = temp
+    }
+    return array;
+}
 $(function() {
 	$('#fullpage').fullpage({
         onLeave: function(index, nextIndex, direction){
@@ -67,8 +78,9 @@ $(function() {
     })    
 
     var chunkedMembers = []
-    while (members.length > 0)
-        chunkedMembers.push(members.splice(0, 3))
+    var shuffledMembers = shuffle(members)
+    while (shuffledMembers.length > 0)
+        chunkedMembers.push(shuffledMembers.splice(0, 3))
     var resultHtml = chunkedMembers.map(function(m) {
         var a = '<div class="carousel-item">' + m.map(function(i) {
             var socials = Object.keys(i.social).map(function(item) {
