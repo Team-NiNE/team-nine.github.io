@@ -1,3 +1,28 @@
+$.fn.extend({
+    animateCss: function(animationName, callback) {
+        var animationEnd = (function(el) {
+            var animations = {
+                animation: 'animationend',
+                OAnimation: 'oAnimationEnd',
+                MozAnimation: 'mozAnimationEnd',
+                WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+                if (el.style[t] !== undefined) {
+                return animations[t];
+                }
+            }
+        })(document.createElement('div'));
+
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+            if (typeof callback === 'function') callback();
+        });
+
+        return this;
+    },
+}); // Copied from: https://github.com/daneden/animate.css
 $(function() {
 	$('#fullpage').fullpage({
         onLeave: function(index, nextIndex, direction){
@@ -18,5 +43,14 @@ $(function() {
            '</div><div class="texts"><span class="title">' + i.name + 
            '</span> <span>' + i.description + '</span></div></div>' +
             (i.github ? '<a class="link" href="' + i.github + '"><i class="fab fa-4x fa-github"></i></a></div>' : '</div>'))
+    })
+    $('.project > .details').on('click', function(e) {
+        $('#project-modal').animateCss('fadeIn')
+        $('#project-modal').css('display', 'flex')
+    })
+    $('#project-modal > .icons > .fa-times').on('click', function(e) {
+        $('#project-modal').animateCss('fadeOut', function(e) {
+            $('#project-modal').css('display', 'none')
+        })
     })
 });
