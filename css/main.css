@@ -178,16 +178,15 @@ button.btn-learn-more:hover > i {
     display: block;
     font-size: 1em;
     color: #333333;
-    line-height: 120%;
+    line-height: 100%;
     margin-bottom: 0.125em;
-    height: 6em;
+    height: 4em;
     overflow-y: hidden;
 }
 .member-link {
     position: absolute; 
-    bottom: 0.5em;
+    bottom: 1em;
     width: 100%;
-    color: black;
 }
 .member-link > a:not(:last-child) {
     margin-right: .3em;
