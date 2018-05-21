@@ -69,7 +69,7 @@
 button.btn-learn-more {
     position: relative;
     border-radius: 2rem;
-    transition: all 700ms ease 350ms;
+    transition: all 300ms ease 150ms;
     background-color: white;
     position: relative;
     text-align: center;
@@ -107,18 +107,18 @@ button.btn-learn-more::after {
 }
 button.btn-learn-more > span {
     opacity: 0;
-    transition: all 700ms ease 0ms;
+    transition: all 300ms ease 0ms;
     color: black;
     margin: auto;
     margin-left: .1em;
 }
 button.btn-learn-more:hover > span {
     opacity: 1;
-    transition-delay: 350ms;
+    transition-delay: 150ms;
 }
 button.btn-learn-more > i {
     opacity: 1;
-    transition: all 700ms ease 350ms;
+    transition: all 300ms ease 150ms;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
