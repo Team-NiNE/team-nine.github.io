@@ -213,7 +213,7 @@ button.btn-learn-more:hover > i {
     position: absolute;
     top: .8em; right: 1em;
 }
-#project-modal > .icons > i,a {
+#project-modal > .icons > * {
     display: block;
     background: white;
     text-align: center;
