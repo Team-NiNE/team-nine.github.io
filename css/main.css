@@ -125,18 +125,18 @@ button.btn-learn-more:hover > i {
 .member-card {
     position: absolute; 
     top: 50%; 
-    margin-top: -10.625em;
-    width: 14.375em;
-    height: 21.125em;
+    margin-top: -12em;
+    width: 16em;
+    height: 24em;
     background: #ffffff;
     display: inline;
     text-align: center;
-    border: 3px solid #52bea2; /*입력 안했을경우 기본 컬러*/
+    border: 0.2em solid #52bea2; /*입력 안했을경우 기본 컬러*/
 }
 
 .member-banner {
     width: 100%;
-    height: 8.75em;
+    height: 9.5em;
     margin-top: 0em;
     background: linear-gradient(90deg, #a18ecf, #fac3ea);  /*배너 없을경우 그라데이션 배경*/
     object-fit: cover;
@@ -144,11 +144,11 @@ button.btn-learn-more:hover > i {
 
 .member-avatar {
     position: absolute;
-    left: 4.75em;
-    top: 6.375em;
-    width: 4.75em;
-    height: 4.75em;
-    border: 0.125em #FFFFFF solid;
+    left: 4.8em;
+    top: 6.3em;
+    width: 6em;
+    height: 6em;
+    border: 0.2em #FFFFFF solid;
     border-radius: 50%;
     background: #FFFFFF;
 }
@@ -159,17 +159,17 @@ button.btn-learn-more:hover > i {
 }
 .member-name {
     margin-bottom: 0em;
-    margin-top: 1.5em;
+    margin-top: 1.8em;
     font-weight: 700;
 }
 .member-position {
     margin-bottom: 0.5em;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 500;
     line-height: 120%;
 }
 .member-about {
-    font-size: 0.875em;
+    font-size: 1em;
     color: #333333;
     line-height: 120%;
     margin-bottom: 0.125em;
