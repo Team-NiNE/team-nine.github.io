@@ -122,41 +122,55 @@ button.btn-learn-more:hover > i {
 }
 
 /*---member---*/
-.member-card-out {
+.member-card {
     position: absolute; 
     top: 50%; 
-    margin-top: -170px;
-    width: 230px;
-    height: 338px;
-    padding: 2px;
-    background-image: linear-gradient(45deg, #84d0e8, #52bea2);
-    display: inline;
-}
-
-.member-card {
-    width: 100%;
-    height: 100%;
+    margin-top: -10.625em;
+    width: 14.375em;
+    height: 21.125em;
     background: #ffffff;
+    display: inline;
     text-align: center;
-    line-height: 100%;
+    border: 3px solid #52bea2; /*입력 안했을경우 기본 컬러*/
 }
 
-.member-img {
+.member-banner {
     width: 100%;
-    height: 140px;
-    margin-top: 0px;
+    height: 8.75em;
+    margin-top: 0em;
+    background: linear-gradient(90deg, #a18ecf, #fac3ea);  /*배너 없을경우 그라데이션 배경*/
+    object-fit: cover;
 }
 
 .member-avatar {
-    margin-left: 76px;
-    margin-right: 76px;
-    margin-top: -38px;
-    width: 76px;
-    height: 76px;
-    border: 2px #ffffff solid;
+    position: absolute;
+    left: 4.75em;
+    top: 6.375em;
+    width: 4.75em;
+    height: 4.75em;
+    border: 0.125em #FFFFFF solid;
     border-radius: 50%;
+    background: #FFFFFF;
 }
 .member-link {
-    padding-bottom: 10px;
-
+    position: absolute; 
+    bottom: 0.5em;
+    width: 100%;
+}
+.member-name {
+    margin-bottom: 0em;
+    margin-top: 1.5em;
+    font-weight: 700;
+}
+.member-position {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 120%;
+}
+.member-about {
+    font-size: 0.875em;
+    color: #333333;
+    line-height: 120%;
+    margin-bottom: 0.125em;
 }
