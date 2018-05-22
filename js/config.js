@@ -35,7 +35,7 @@ members = [
     },
     {
         nickname: 'Cocoa',
-        position: 'Developer',
+        position: 'Master',
         about: '집에 가고 싶습니다',
         color: '#FFC0CB', // CSS color
         images: { //image url
