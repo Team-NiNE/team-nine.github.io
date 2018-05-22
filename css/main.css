@@ -273,6 +273,10 @@ button.btn-learn-more:hover > i {
 }
 /*---member---*/
 .member-card {
+    float: left;
+    left: calc(50% - 36em);
+    height: 50%; 
+    margin-bottom: -15em;
     position: relative;
     width: 20em;
     height: 30em;
